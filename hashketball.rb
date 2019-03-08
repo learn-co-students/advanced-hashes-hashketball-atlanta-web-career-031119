@@ -111,3 +111,11 @@ def player_numbers(which_team)
   end
   return jerseys
 end
+
+def player_stats(player)
+  game_hash.each do |team, info|
+    if info[:players].include?(player)
+      return info[:players]["#{player}"]
+    end
+  end
+end
