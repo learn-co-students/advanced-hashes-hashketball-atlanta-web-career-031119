@@ -1,7 +1,7 @@
 # Write your code here!
 def game_hash
   {
-    home: {
+    :home => {
       team_name: "Brooklyn Nets",
       colors: ["Black", "White"],
       players: {
@@ -21,8 +21,8 @@ def game_hash
           number:31,shoe:15,points:19,rebounds:2,assists:2,steals:4,blocks:11,slam_dunks:1
         }
       }
-    }
-    away: {
+    },
+    :away => {
       team_name: "Charlotte Hornets",
       colors: ["Turquoise", "Purple"],
       players: {
