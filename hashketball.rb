@@ -91,3 +91,23 @@ def team_colors(party)
     end
   end
 end
+
+def team_names
+  names=[]
+  game_hash.each do |team, info|
+    names<<info[:team_name]
+  end
+  return names
+end
+
+def player_numbers(which_team)
+  jerseys=[]
+  game_hash.each do |team, info|
+    if info[:team_name]==which_team
+      info[:players].each do |player, stats|
+        jerseys<<stats[:number]
+      end
+    end
+  end
+  return jerseys
+end
